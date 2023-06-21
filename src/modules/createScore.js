@@ -1,14 +1,14 @@
-import { postScore } from "./fetching";
+import { postScore } from './fetching.js';
 
 const createScoreHandler = (event) => {
   event.preventDefault();
-  const user = document.querySelector("#user");
-  const score = document.querySelector("#score");
+  const user = document.querySelector('#user');
+  const score = document.querySelector('#score');
 
   postScore({ user: user.value, score: score.value });
 
-  user.value = "";
-  score.value = "";
+  user.value = '';
+  score.value = '';
 };
 
 export default createScoreHandler;

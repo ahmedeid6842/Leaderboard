@@ -1,8 +1,8 @@
 const display = (scores) => {
-  const scoreListContainer = document.querySelector(".score-list-container");
-  let scoresListHtml = ``;
+  const scoreListContainer = document.querySelector('.score-list-container');
+  let scoresListHtml = '';
 
-  //sort scores based on the score before displaying
+  // sort scores based on the score before displaying
   scores.sort((a, b) => b.score - a.score);
 
   // iterate over scores and added them to DOM
