@@ -1,3 +1,5 @@
+import display from "./displayScores";
+
 const postScore = async (body) => {
   await fetch(
     "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/I8nlr5WBZ1UYAevVbaLR/scores",
@@ -16,7 +18,7 @@ const getScores = async () => {
     "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/I8nlr5WBZ1UYAevVbaLR/scores"
   );
   const scores = await response.json();
-  return scores;
+  display(scores.result);
 };
 
 export { getScores, postScore };

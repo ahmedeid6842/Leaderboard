@@ -1,1 +1,4 @@
-import './style.css';
+import "./style.css";
+import { getScores } from "./modules/fetching";
+
+getScores();
