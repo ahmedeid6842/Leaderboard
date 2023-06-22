@@ -118,6 +118,7 @@ input {
   color: #e74c3c;
   background-color: #ffc7b3;
 }
+
 @media screen and (max-width: 768px) {
   main {
     align-items: center;
@@ -142,6 +143,7 @@ input {
   .add-btn {
     align-self: center;
   }
+
   .success,
   .error {
     font-size: 2rem;
