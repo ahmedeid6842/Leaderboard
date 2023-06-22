@@ -7,6 +7,7 @@ const createScoreHandler = (event) => {
 
   postScore({ user: user.value, score: score.value });
 
+  document.querySelector('.success').classList.remove('hidden');
   user.value = '';
   score.value = '';
 };

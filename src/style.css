@@ -15,18 +15,8 @@ body {
   font-family: Oswald, sans-serif;
 }
 
-.btn {
-  width: 10rem;
-  padding: 0.5rem 0;
-  align-self: flex-end;
-  font-family: inherit;
-  cursor: pointer;
-  font-size: 1.8rem;
-  background: none;
-  outline: none;
-  border: 2px solid #000;
-  transform: scale(1.1);
-  transition: 0.4s;
+.hidden {
+  display: none;
 }
 
 h2 {
@@ -43,6 +33,20 @@ main {
   padding: 2rem 3rem;
   display: flex;
   justify-content: space-between;
+}
+
+.btn {
+  width: 10rem;
+  padding: 0.5rem 0;
+  align-self: flex-end;
+  font-family: inherit;
+  cursor: pointer;
+  font-size: 1.8rem;
+  background: none;
+  outline: none;
+  border: 2px solid #000;
+  transform: scale(1.1);
+  transition: 0.4s;
 }
 
 .score-list-section,
@@ -95,4 +99,53 @@ input {
   border-radius: 7px;
   border: 2px solid #333;
   padding: 1rem;
+}
+
+.success {
+  width: fit-content;
+  margin: 3rem 0;
+  padding: 1.5rem 3rem;
+  font-size: 1.6rem;
+  color: #4bb543;
+  background-color: #c7e9b4;
+}
+
+.error {
+  width: fit-content;
+  margin: 3rem 0;
+  padding: 1.5rem 3rem;
+  font-size: 1.6rem;
+  color: #e74c3c;
+  background-color: #ffc7b3;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 2rem;
+  }
+
+  .score-list-section,
+  .add-score-section {
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .list-header {
+    justify-content: space-between;
+  }
+
+  .add-btn {
+    align-self: center;
+  }
+
+  .success,
+  .error {
+    font-size: 2rem;
+  }
 }
